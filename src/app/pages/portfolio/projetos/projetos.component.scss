@@ -1,0 +1,46 @@
+.fundo {
+  width: 90%;
+  height: 80vh;
+  padding:5%;
+  h1{
+    font-size: 3em;
+        color: #EEAD0E;
+  }
+
+  .grid {
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 48% 48%;
+    column-gap: 5%;
+    row-gap: 2%;
+    section {
+        border:1px #FCFCFC solid;
+        background-color: #FAFAFA;
+        border-radius: 5px;
+        box-shadow: 0 0 0.5em #CCC;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition-duration: 0.2s;
+        padding:5px;
+      img{
+        height:50%;
+      }
+      h1{
+        font-size: 1.2em;
+      }
+      p{
+        text-align: center;
+        font-size: 1.2em;
+      }
+      &:hover{
+        transform:translateY(-10px);
+        box-shadow: 0 0 0.8em #CCC;
+        cursor: pointer;
+      }
+    }
+  }
+}
